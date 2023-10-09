@@ -3,16 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../Styles/style.css">
     <title>Document</title>
 
 </head>
 <body>
-    <div class="nav-bar">
-          <div class="jason bourne">
-                <p></p>
-          </div>
+    <div class="navbar">
+        <div>
+            <button class="navbar-button"><a href="#">Pagrindinis</a></button>
+        </div>
+        <div> 
+            <button class="navbar-button"><a href="#">Filmų rekomendacijos</a></button>
+            <button class="navbar-button"><a href="#">Filmai</a></button>
+            <button class="navbar-button"><a href="#">Pridėti naują filmą</a></button>
+        </div>
+        <div>
+            <form action="" id="search-submit">
+                <input type="text" placeholder="Search..." name="search" class="input-search">
+                <button type="submit" class="navbar-button"><i class="fa fa-search "></i></button>
+            </form>
+        </div>             
     </div>
+    <div class="page-container">                
+    <div class="grid-content-container">
+        <div class="grid-menu-container">
+
+        </div>
+        <div class="grid-main-container">
+            <div class="movie-container1">
+                    <div class="movie-container-image">
+                        <img src="../images/the bourne indentity.jpg" alt="the bourne indentity">
+                    </div>
+                    <div class="movie-container-description">
+                        <p>The bourne identity</p>
+                        <p>Filmai/Veiksmo/Trileriai</p>
+                    </div>
+                    
+            </div>
+        </div>
+    </div>
+    </div>
+    
     <script type="text/javascript" src="../js/app.js"></script>
 </body>
 </html>
