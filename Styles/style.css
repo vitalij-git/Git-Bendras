@@ -1,0 +1,89 @@
+body{
+    max-width: 1024px;
+    margin: auto;
+    background:url(../images/grunge-dark-interior-with-smoky-atmosphere.jpg) no-repeat center center fixed; 
+    background-size: cover;
+}
+.page-container{
+    margin-top:3rem;
+    background: #f1f1f3;
+}
+.navbar{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgb(3, 152, 252);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+   
+}
+.navbar-button{
+    margin: 5px;
+    padding: 15px;
+    background: none;
+    border:none;
+    
+}
+.navbar-button:hover{
+    background-color: rgba(20, 146, 230, 0.766);
+    border-radius: 10%;
+}
+
+.navbar-button a{
+    color: rgb(57, 68, 84);
+    text-decoration: solid;
+}
+.navbar-button i:hover{
+    color:white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.navbar-button a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.input-search{
+    font-size: larger;
+    border:none;
+}
+.grid-content-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.grid-menu-container{
+    grid-area: 1 / 1 / 6 / 2;
+    min-height: 1000px;
+}
+.grid-main-container{
+    grid-area: 1 / 2 / 6 / 5;
+    min-height: 1000px;
+}
+.grid-main-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.movie-container1{
+    grid-area: 1 / 1 / 2 / 2;
+}
+.movie-container1 img{
+    margin-top: 1rem;
+    max-width: 80%;
+}
+.movie-container-description{
+    display: block;
+    text-align: center;
+}
+.movie-container-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
