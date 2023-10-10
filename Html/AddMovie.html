@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a New Movie</title>
+    <link rel="stylesheet" href="../Styles/AddMovieStyle.css">
+</head>
+<body>
+    <div class="navbar">
+        <div>
+            <button class="navbar-button"><a href="#">Pagrindinis</a></button>
+        </div>
+        <div> 
+            <button class="navbar-button"><a href="#">Wish List</a></button>
+            <div class="subnav">
+                <button class="navbar-button"><a href="#">Filmai</a></button>
+                 <div class="subnav-content">
+                    <button class="navbar-button"><a href="#">Drama</a></button>
+                    <button class="navbar-button"><a href="#">Komedija</a>
+                    <button class="navbar-button"><a href="#">Trileris</a></button>
+                    <button class="navbar-button"><a href="#">Fantastika</a></button>
+                    <button class="navbar-button"><a href="#">Veiksmo filmas</a></button>
+                    <button class="navbar-button"><a href="#">Dokumentika</a></button>
+                    <button class="navbar-button"><a href="#">Siaubo filmas</a></button>
+                    <button class="navbar-button"><a href="#">Animacija</a></button>
+                </div>
+            </div>
+            <button class="navbar-button"><a href="#">Pridėti naują filmą</a></button>
+        </div>
+        <div>
+            <form action="" id="search-submit">
+                <input type="text" placeholder="Search..." name="search" id="search" class="input-search">
+                <button type="submit" class="navbar-button"><i class="fa fa-search "></i></button>
+            </form>
+        </div>             
+    </div>
+    <div class="container">
+        <h1>Add a New Movie</h1>
+        <form id="movieForm">
+            <label for="title">Title:</label>
+            <input type="text" id="title" required>
+            <br><br>
+            <label for="cover">Cover Image URL:</label>
+            <input type="text" id="cover" required>
+            <br><br>
+            <label>Genres:</label>
+            <div class="checkbox-group">
+                <div>
+                    <label for="action">Action</label>
+                    <input type="checkbox" id="action" name="genre" value="Action">
+                </div>
+                <div>
+                    <label for="horror">Animation</label>
+                    <input type="checkbox" id="Animation" name="genre" value="Animation">
+                </div>
+                <div>
+                    <label for="comedy">Comedy</label>
+                    <input type="checkbox" id="comedy" name="genre" value="Comedy">
+                </div>
+                <div>
+                    <label for="drama">Drama</label>
+                    <input type="checkbox" id="drama" name="genre" value="Drama">
+                </div>
+                <div>
+                    <label for="horror">Documentary</label>
+                    <input type="checkbox" id="Documentary" name="genre" value="Documentary">
+                </div>
+                <div>
+                    <label for="horror">Horror</label>
+                    <input type="checkbox" id="horror" name="genre" value="Horror">
+                </div>
+                <div>
+                    <label for="horror">Fantastic</label>
+                    <input type="checkbox" id="Fantastic" name="genre" value="Fantastic">
+                </div>
+                <div>
+                    <label for="horror">Thriller</label>
+                    <input type="checkbox" id="Thriller" name="genre" value="Thriller">
+                </div>
+            </div>
+            <br>
+            <label for="year">Release Year:</label>
+            <input type="date" id="year" min="1900-01-01" max="2023-12-31" required>
+            <br><br>
+            <input type="submit" value="Add Movie">
+        </form>
+    </div>
+
+    <div class="movie-list" id="movieList">
+    </div>
+
+    <script src="../js/AddMovieScript.js" defer></script>
+</body>
+</html>
