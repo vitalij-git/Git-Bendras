@@ -1,0 +1,32 @@
+#genre {
+    font-size:120%;
+    width: 83%;
+}
+
+.formtext {
+    font-size:130%;
+    color:white;
+    margin: 20px;
+    margin-top: 10px;
+}
+
+.forminput {
+    font-size:120%;
+    color:black;
+    margin: 20px;
+    margin-top: 10px;
+    width: 80%;
+}
+
+
+#submitbutton {
+    margin:20px;
+    width:83%;
+    background-color: lightgray;
+    border:1px solid gray;
+    border-radius:5px;
+    font-size:120%;
+
+}
+
+
