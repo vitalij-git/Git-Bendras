@@ -18,6 +18,7 @@ body{
     justify-content: space-between;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     border-radius: 1%;
+    margin: auto;
    
 }
 .navbar-button{
@@ -100,3 +101,37 @@ body{
     color: rgba(20, 146, 230, 0.766);
 }
 
+.connection-container{
+    display: flex;  
+    justify-content: end;
+    
+}
+.connection-container a{
+    color: white;
+    margin: 0.5rem;
+}
+.connection-container a:hover{
+    color: rgb(3, 152, 252);
+}
+.subnav {
+    float: left;
+    overflow: hidden;
+  }
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: rgb(3, 152, 252);
+    width: 100%;
+    z-index: 1;
+    border-radius: 2%;
+  }
+  .subnav:hover .subnav-content {
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    width: max-content;
+    transform: translate(-50%, -50%);
+    top: 12.5%;
+    left: 50%;
+  }
