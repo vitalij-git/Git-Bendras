@@ -26,7 +26,12 @@
     border:1px solid gray;
     border-radius:5px;
     font-size:120%;
+    
 
+}
+
+#submitbutton:hover{
+    background-color: rgba(211, 211, 211, 0.766);
 }
 
 
