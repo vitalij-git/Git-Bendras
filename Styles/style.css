@@ -10,8 +10,6 @@ body{
    border-radius: 1%;
 }
 .navbar{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     background-color: rgb(3, 152, 252);
     display: flex;
     flex-wrap: wrap;
