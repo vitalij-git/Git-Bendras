@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="stylesheet" href="../Styles/searchform.css">
     <title>Document</title>
 
 </head>
@@ -44,7 +45,30 @@
     <div class="page-container">                
     <div class="grid-content-container">
         <div class="grid-menu-container">
-
+            <br/>
+            <form id="movie-form" autocomplete="off">
+                <label for="genre", class="formtext">Žanras: </label>
+                <br/>
+                <select id="genre" class="forminput">
+                    <option value="genre">Pasirinkite žanrą</option>
+                    <option value="drama">Drama</option>
+                    <option value="komedija">Komedija</option>
+                    <option value="trileris">Trileris</option>
+                    <option value="fantastika">Fantastika</option>
+                    <option value="veiksmo">Veiksmo filmas</option>
+                    <option value="dokumentika">Dokumentika</option>
+                    <option value="siaubo">Siaubio filmas</option>
+                    <option value="animacija">Animacija</option>
+                </select>
+                <br/>
+                <label for ="name", class="formtext">Išleidimo metai: </label>
+                <br/>
+                <input type="text", id="year" name="year" class="forminput" required placeholder="2010"/> <br/>
+                <label for ="name", class="formtext">Sukūrimo šalis: </label>
+                <br>
+                <input type="text", id="country" name="country" class="forminput" required placeholder="JAV"/> <br/>
+                <input type="submit", value="Ieškoti" id="submitbutton">
+            </form>
         </div>
         <div class="grid-main-container">
             <div class="movie-container1">
