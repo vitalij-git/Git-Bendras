@@ -6,7 +6,8 @@ body{
 }
 .page-container{
     margin-top:3rem;
-    background: #f1f1f3;
+    background: #222225;
+   border-radius: 1%;
 }
 .navbar{
     margin-top: 1rem;
@@ -16,20 +17,19 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    border-radius: 1%;
    
 }
 .navbar-button{
     margin: 5px;
     padding: 15px;
     background: none;
-    border:none;
-    
+    border:none;  
 }
 .navbar-button:hover{
     background-color: rgba(20, 146, 230, 0.766);
     border-radius: 10%;
 }
-
 .navbar-button a{
     color: rgb(57, 68, 84);
     text-decoration: solid;
@@ -80,10 +80,23 @@ body{
     display: block;
     text-align: center;
 }
-.movie-container-image{
+.movie-container-description p{
+    margin:2px;
+    font-style: oblique;
+    color:white;
+}
+.movie-container-description a{
+    text-decoration: none;
+    color:white;
+    font-style: normal;
+}
+.movie-container-image a{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.movie-container-description a:hover{
+    color: rgba(20, 146, 230, 0.766);
+}
 
