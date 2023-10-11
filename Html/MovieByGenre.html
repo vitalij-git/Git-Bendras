@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="stylesheet" href="../Styles/MovieByGenre.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="connection-container">
+        <a href="http://">Prisijungti</a>
+        <a href="http://">Registruotis</a>
+    </div>
+    <div class="navbar">
+        <div>
+            <button class="navbar-button"><a href="./index.html">Pagrindinis</a></button>
+        </div>
+        <div> 
+            <button class="navbar-button"><a href="#">Wish List</a></button>
+            <div class="subnav">
+                <button class="navbar-button"><a href="#">Filmai</a></button>
+                 <div class="subnav-content">
+                    <button class="navbar-button"><a href="../Html/MovieByGenre.html?genre=Drama">Drama</a></button>
+                    <button class="navbar-button"><a href="../Html/MovieByGenre.html?genre=Comedy">Komedija</a>
+                    <button class="navbar-button"><a href="../Html/MovieByGenre.html?genre=Thriller">Trileris</a></button>
+                    <button class="navbar-button"><a href="../Html/MovieByGenre.html?genre=Fantastic">Fantastika</a></button>
+                    <button class="navbar-button"><a href="../Html/MovieByGenre.html?genre=Action">Veiksmo filmas</a></button>
+                    <button class="navbar-button"><a href="../Html/MovieByGenre.html?genre=Documentary">Dokumentika</a></button>
+                    <button class="navbar-button"><a href="../Html/MovieByGenre.html?genre=Horror">Siaubo filmas</a></button>
+                    <button class="navbar-button"><a href="../Html/MovieByGenre.html?genre=Animation">Animacija</a></button>
+                </div>
+            </div>
+            <button class="navbar-button"><a href="./AddMovie.html">Pridėti naują filmą</a></button>
+        </div>
+        <div>
+            <form action="" id="search-submit">
+                <input type="text" placeholder="Search..." name="search" id="search" class="input-search">
+                <button type="submit" class="navbar-button"><i class="fa fa-search "></i></button>
+            </form>
+        </div>             
+    </div>
+    <div class="page-container">                
+        <div class="grid-content-container-4" id="movies-container-by-genre">
+
+        </div>
+    
+    </div>
+    
+    <script type="text/javascript" src="../js/MovieByGenre.js"></script>
+</body>
+</html>
