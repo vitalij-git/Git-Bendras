@@ -34,6 +34,8 @@ function showMovies(title, cover, genre, year){
 
 
 
+
+
    
   
     
