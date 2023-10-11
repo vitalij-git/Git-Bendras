@@ -26,7 +26,7 @@ body{
     margin: 5px;
     padding: 15px;
     background: none;
-    border:none;  
+    border:none; 
 }
 .navbar-button:hover{
     background-color: rgba(20, 146, 230, 0.766);
@@ -137,4 +137,7 @@ body{
     transform: translate(-50%, -50%);
     top: 12.5%;
     left: 50%;
+  }
+  .navbar-logo{
+    height: 25px;
   }
