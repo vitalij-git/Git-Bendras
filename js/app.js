@@ -1,14 +1,21 @@
-const searchBar  = document.querySelector("#search-submit");
+const searchForm  = document.querySelector("#search-submit");
 const moviesContainer = document.querySelector("#movies-container");
-searchBar.addEventListener("submit", (e)=>{
+
+searchForm.addEventListener("submit", (e)=>{
     e.preventDefault();
     const searchData = e.target.elements;
     const movieTitle = searchData.search.value;
     let localStorageMovies = JSON.parse(localStorage.getItem("movies"));
     localStorageMovies.forEach(movie => {
-        if(movieTitle === movie.title){
-            sessionStorage.setItem(movieTitle, JSON.stringify(movie));
-        }            
+        if(movieTitle = movie.title){
+            console.log(movie);
+           showMovies(movie.title, movie.cover, movie.genre, movie.year);
+        } else{
+            moviesContainer.innerHTML = `<h1>Tokio filmo nerado</h1>`;
+            moviesContainer.style.color="white";
+            moviesContainer.style.display="block";
+        }
+
     });
 });
 
@@ -27,7 +34,7 @@ function showMovies(title, cover, genre, year){
         <p>${year}</p>
         <p>${genre}</p>
     </div>
-    </div>` 
+    </div>` ;
 }
 
 
