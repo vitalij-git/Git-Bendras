@@ -6,8 +6,11 @@ body{
 }
 .page-container{
     margin-top:3rem;
-    background: #222225;
-   border-radius: 1%;
+    margin: 50px auto;
+    background-color: #00000092;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);     
 }
 .navbar{
     background-color: rgb(3, 152, 252);
@@ -68,10 +71,12 @@ body{
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
-.movie-container1{
-    grid-area: 1 / 1 / 2 / 2;
+.movie-container{
+    display: flex;
+    flex-direction: column;
+
 }
-.movie-container1 img{
+.movie-container img{
     margin-top: 1rem;
     max-width: 80%;
 }
